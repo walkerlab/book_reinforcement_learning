@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  notebook:
+    image: sinzlab/pytorch
+    ports:
+      - "${JUPYTER_PORT:-8888}:8888"  
+    environment:
+      - "JUPYTER_PASSWORD=${JUPYTER_PASSWORD:-simple}"
+    volumes:
+      - .:/notebooks
