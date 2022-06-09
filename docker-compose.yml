@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   notebook:
-    image: sinzlab/pytorch
+    image: walkerlab/pytorch
     ports:
       - "${JUPYTER_PORT:-8888}:8888"  
     environment:
